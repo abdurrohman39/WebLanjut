@@ -1,0 +1,143 @@
+<html>
+	<head>
+
+	<head>
+	<title>Universitas Muhammadiyah Semarang</title>
+	<link rel="stylesheet" href="basic.css">
+	</head>
+	<body>
+			<div class="header">
+					<h2><img class="copyprevention-processed" alt="Depan" src="img/LogoUnimus.png" style="width:250px;">
+					</h2>
+					  </div>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Beranda</a>
+				<div class="dropdown">
+					<button class="dropbtn">Tentang UNIMUS
+					 <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<a href="fakultas/motto.html">Motto</a>
+					<a href="fakultas/Sj_unimus.html">Sejarah Unimus</a>
+					<a href="fakultas/vs.html">Visi Misi</a>
+					</div>
+				</div> 
+				<div class="dropdown">
+					<button class="dropbtn">Fakultas
+					 <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<a href="fakultas/fikkes.html">Ilmu Keperawatan dan Kesehatan</a>
+					<a href="fakultas/fkm.html">Kesehatan Masyarakat</a>
+					<a href="fakultas/fk.html">Kedokteran Umum</a>
+					<a href="fakultas/fbba.html">Bahasa dan Budaya Asing</a>
+					<a href="fakultas/ft.html">Teknik</a>
+					<a href="fakultas/fe.html">Ekonomi</a>
+					<a href="fakultas/fmipa.html">MIPA</a>
+					<a href="fakultas/fkg.html">Kedokteran Gigi</a>
+						</div>
+					</div> 
+				<div class="dropdown">
+					<a href="blog-item.php">Berita & Dokumentasi</a>
+					</div>
+
+					
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					  </a>
+  
+		</div>
+			
+		<div >
+				<img class="mySlides" src="img/slide1.jpg" style="width:100%">
+				<img class="mySlides" src="img/slide2.jpg" style="width:100%">
+				<img class="mySlides" src="img/slide3.jpg" style="width:100%">
+			  
+			</div>
+			  
+			  <script>
+			
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				for (i = 0; i < slides.length; i++) {
+    			slides[i].style.display = "none"; 
+  					}
+  				slideIndex++;
+  					if (slideIndex > slides.length) {slideIndex = 1} 
+  					slides[slideIndex-1].style.display = "block"; 
+  					setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+
+			  }
+			  
+			  function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+				   x[i].style.display = "none";  
+				}
+				x[slideIndex-1].style.display = "block";  
+			  }
+			  </script>
+			  
+			  <div class="teks">
+					<p><marquee>WELCOME TO UNIVERSITY MUHAMMADIYAH SEMARANG</marquee></p>
+			 </div>
+
+			  <div class="row">
+				<div class="column" style="background-color: #6495ED;"><h2>NEWS</h2>
+				
+					<div class="gallery">
+						<img src="img/news.jpg" width="250" height="200">
+						<div class="desc">Selamat atas pembukaan Program studi baru S1 - Teknik Informatika Fakultas Teknik</div>
+					
+					</div>
+					
+				</div>
+				
+				<div class="column" style="background-color:#87CEFA;"><center><h2>Contac us</h2></center>
+					<form><center>
+							<div>
+								<input type="text" required="required" style="width: 250px;" placeholder="Your Name" />
+							</div>
+							<div>
+								<input type="text" required="required" style="width: 250px;" placeholder="Your Email" />
+							</div>
+							<div>
+								<textarea name="message" required="required" style="min-height: 150px; width: 250px;" placeholder="Message"></textarea>
+							</div>
+							<div>
+								<button type="submit">SUBMIT REQUEST</button>
+							</div>
+						</center>
+						</form>
+				</div>
+			  </div>
+	
+			  	<div class="footer"><img src="img/icon.png" style="width: 25px; height: 25px;" >
+				  <p>
+
+					Universitas Muhammaditah Semarang<br>
+					Jl. Kedungmundu Raya No.18 Semarang. 50273 / <strong>Call:</strong> 024-76740296 / <strong>E-Mail :</strong> <a href="mailto:sekretariat@unimus.ac.id">info@unimus.ac.id</a><br>
+					Powered by <a>Harits Abdurrohman</a></p>
+				</div></div>
+				  
+				  <script>
+				  function myFunction() {
+					  var x = document.getElementById("myTopnav");
+					  if (x.className === "topnav") {
+						  x.className += " responsive";
+					  } else {
+						  x.className = "topnav";
+					  }
+				  }
+				  </script>
+	</body>
+
+</html>
